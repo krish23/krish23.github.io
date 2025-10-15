@@ -30,20 +30,36 @@
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
             padding: 40px 50px;
+            text-align: center;
         }
         
         .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 2.8em;
+            margin-bottom: 5px;
             font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .header .title {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-bottom: 20px;
+            opacity: 0.95;
         }
         
         .contact-info {
             display: flex;
-            gap: 25px;
+            justify-content: center;
+            gap: 20px;
             flex-wrap: wrap;
             margin-top: 15px;
             font-size: 0.95em;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
         
         .contact-info a {
@@ -72,71 +88,181 @@
             margin-bottom: 15px;
             padding-bottom: 8px;
             border-bottom: 3px solid #1e3c72;
-        }
-        
-        .experience-header {
-            font-weight: 600;
-            color: #2a5298;
-            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .summary-box {
-            background: #f8f9fa;
-            padding: 15px 20px;
-            border-left: 4px solid #1e3c72;
-            margin-bottom: 20px;
-            font-weight: 500;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 20px 25px;
+            border-left: 5px solid #1e3c72;
+            margin-bottom: 30px;
+            font-size: 1.05em;
+            line-height: 1.8;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
         
         .job-title {
-            font-size: 1.15em;
-            font-weight: 600;
+            font-size: 1.2em;
+            font-weight: 700;
             color: #1e3c72;
-            margin-top: 20px;
-        }
-        
-        .company-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
         }
         
         .company-name {
             font-size: 1.1em;
             font-weight: 600;
-            color: #333;
+            color: #2a5298;
+            margin-top: 3px;
+        }
+        
+        .job-meta {
+            text-align: right;
         }
         
         .date {
             color: #666;
-            font-style: italic;
             font-size: 0.95em;
+            font-weight: 500;
         }
         
-        .project-block {
-            margin: 20px 0;
+        .location {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 2px;
+        }
+        
+        .responsibilities {
+            margin-top: 12px;
+        }
+        
+        .responsibilities li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+            color: #444;
+        }
+        
+        .project-section {
+            margin-top: 20px;
             padding: 20px;
             background: #f8f9fa;
             border-radius: 5px;
+            border-left: 4px solid #2a5298;
         }
         
         .project-title {
-            font-weight: 600;
-            color: #2a5298;
-            margin-bottom: 8px;
-            font-size: 1.05em;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
         
         .project-description {
             margin-bottom: 12px;
             line-height: 1.7;
+            color: #555;
+            font-style: italic;
         }
         
-        .tech-stack {
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-tag {
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+            border: 1px solid #bbdefb;
+        }
+        
+        .education-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #2a5298;
+        }
+        
+        .degree {
+            font-weight: 700;
             color: #1e3c72;
+            font-size: 1.1em;
+        }
+        
+        .university {
+            color: #555;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+        
+        .edu-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .publications {
+            margin-top: 25px;
+        }
+        
+        .pub-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2a5298;
+        }
+        
+        .pub-title {
             font-weight: 600;
-            margin-top: 10px;
+            color: #1e3c72;
+            margin-bottom: 5px;
+        }
+        
+        .pub-type {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .pub-link {
+            font-size: 0.9em;
+        }
+        
+        .pub-link a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+        
+        .pub-link a:hover {
+            text-decoration: underline;
         }
         
         ul {
@@ -144,276 +270,242 @@
             margin-top: 10px;
         }
         
-        li {
-            margin-bottom: 8px;
-            line-height: 1.6;
-        }
-        
-        .skills-grid {
-            display: grid;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .skill-category {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-            border-left: 4px solid #2a5298;
-        }
-        
-        .skill-category strong {
-            color: #1e3c72;
-            display: block;
-            margin-bottom: 8px;
-        }
-        
-        .education-item {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 5px;
-        }
-        
-        .degree {
-            font-weight: 600;
-            color: #1e3c72;
-            font-size: 1.05em;
-        }
-        
-        .university {
-            color: #666;
-            margin-top: 5px;
-        }
-        
-        .publications {
-            margin-top: 10px;
-            padding-left: 15px;
-        }
-        
-        .publications li {
-            margin-bottom: 5px;
-        }
-        
-        .publications a {
-            color: #2a5298;
-            text-decoration: none;
-        }
-        
-        .publications a:hover {
-            text-decoration: underline;
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Krishanthan Krishnamoorthy</h1>
+            <h1>KRISHANTHAN KRISHNAMOORTHY</h1>
+            <div class="title">Technical Lead</div>
             <div class="contact-info">
                 <span>📧 <a href="mailto:krishuwyo@gmail.com">krishuwyo@gmail.com</a></span>
+                <span>📱 +94 760 909 934</span>
                 <span>🌐 <a href="https://krish23.github.io/" target="_blank">krish23.github.io</a></span>
-                <span>📱 +94760909934</span>
+                <span>📍 Colombo, Sri Lanka</span>
             </div>
         </div>
         
         <div class="content">
             <div class="summary-box">
-                <strong>Total Experience:</strong> 11 Years | Associate Technical Lead | Full-Stack Developer & System Architect
+                Technical Lead with 11 years of experience designing and delivering scalable enterprise applications using Java, Spring Boot Microservices, and AWS. Skilled in distributed system design, CI/CD automation, and team leadership. Proven track record across healthcare, fintech, and e-commerce domains, with expertise in backend architecture, cloud integration, and data-driven systems.
             </div>
             
             <div class="section">
-                <h2 class="section-title">Core Competencies</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <strong>Server-Side Technologies:</strong>
-                        Java, SpringBoot, Spring Microservices, Hibernate, GraphQL, NodeJS, PHP, Laravel, Python, Django, Flask
-                    </div>
-                    <div class="skill-category">
-                        <strong>Front-End Technologies:</strong>
-                        JavaScript, React, Redux, VueJS, NextJS
-                    </div>
-                    <div class="skill-category">
-                        <strong>Mobile Development:</strong>
-                        Swift, SwiftUI, Kotlin, Flutter, Android SDK
-                    </div>
-                    <div class="skill-category">
-                        <strong>DevOps & Cloud:</strong>
-                        AWS CI/CD, AWS Lambda, Google Cloud Platform, Docker, ELK Stack
-                    </div>
-                    <div class="skill-category">
-                        <strong>Databases:</strong>
-                        MySQL, MariaDB, MongoDB, PostgreSQL
-                    </div>
-                    <div class="skill-category">
-                        <strong>Other Tools:</strong>
-                        Apache Nifi, MQTT, Kafka, JDBI, BrowserStack, Okta
-                    </div>
-                    <div class="skill-category">
-                        <strong>Domain Expertise:</strong>
-                        Healthcare & Medical Apps, Transportation & Ride-Hailing, CRM, Mobile Therapy, Social Networks, Fintech, E-Commerce
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2 class="section-title">Professional Experience</h2>
-                
-                <div class="company-info">
-                    <span class="company-name">Aeturnum Lanka — Sri Lanka</span>
-                    <span class="date">Feb 2022 - Present</span>
-                </div>
-                <div class="job-title">Associate Technical Lead</div>
-                
-                <div class="project-block">
-                    <div class="project-title">Client: Monitored Therapeutics Inc. (MTI)</div>
-                    <div class="project-description">
-                        MTI is a telehealth solutions provider specializing in Remote Patient Monitoring for respiratory diseases. Through customizable platforms (GoHome™, GoMobile, and BYOD), MTI increases patient engagement, drug adherence, and quality of life while reducing healthcare costs.
-                    </div>
-                    <ul>
-                        <li>Designed and developed scalable microservices with Spring Boot, integrating AWS Lambda and JDBI for efficient database interactions</li>
-                        <li>Managed DevOps workflows by setting up AWS CodePipeline for seamless CI/CD and automated deployments</li>
-                        <li>Built and maintained robust front-end applications using React and Redux, implementing advanced security measures with Okta for authentication and authorization</li>
-                        <li>Built AWS Lambda APIs to handle patient measurement data and return computed results to mobile applications</li>
-                    </ul>
-                    <div class="tech-stack">Technologies: Java, Spring Microservices, SpringBoot, React, Redux, Okta, AWS Lambda, JDBI</div>
-                </div>
-                
-                <div class="project-block">
-                    <div class="project-title">Client: mosaic.green</div>
-                    <div class="project-description">
-                        mosaic.green is a data-driven e-commerce platform providing online store facilities including mobile apps, admin panels, business platforms, and data analytics to vendors. Served as Technical Lead and Team Leader for Report and Data Analytics team.
-                    </div>
-                    <ul>
-                        <li>Developed backend applications leveraging Spring Boot Microservices with Spring Cloud for centralized configurations and service discovery</li>
-                        <li>Built frontend applications using React, NextJS, and Redux with Nivo Chart library for data visualization</li>
-                        <li>Researched, planned, and provided technical details to build features and dashboards for data analytics and transactions</li>
-                        <li>Implemented ETL architecture to extract data from microservices to data analytics platform</li>
-                        <li>Created technical documentation, diagrams, and database structures</li>
-                        <li>Collaborated with business analysts and product managers to create technical tasks for developers</li>
-                        <li>Performed code reviews and deployment document checks</li>
-                    </ul>
-                    <div class="tech-stack">Technologies: Java, Spring Microservices, SpringBoot, React, NextJS, Nivo Chart, Kafka, Apache Nifi</div>
-                </div>
-                
-                <div class="project-block">
-                    <div class="project-title">Client: Senso.ai</div>
-                    <div class="project-description">
-                        Senso.ai is a Canadian-based fintech company providing a proactive borrower intelligence and engagement platform for mortgage lenders. Served as Technical Lead responsible for Django backend and React frontend.
-                    </div>
-                    <ul>
-                        <li>Worked on core Django API and backend application development</li>
-                        <li>Responsible for analysis, design, coding, testing, implementation, maintenance, and documentation of backend applications</li>
-                        <li>Provided technical guidance and coaching to developers, conducted code reviews and peer reviews</li>
-                    </ul>
-                    <div class="tech-stack">Technologies: Python, Django, Flask, Pytest, React, Hubspot, Redis, PostgreSQL</div>
-                </div>
-                
-                <div class="company-info">
-                    <span class="company-name">Take10 Trivia — Illinois, United States</span>
-                    <span class="date">Aug 2017 - Feb 2022</span>
-                </div>
-                <div class="job-title">Technical Lead</div>
-                
-                <div class="project-block">
-                    <div class="project-description">
-                        Take10 Trivia is a trivia app offering real prizes where users answer 10 questions correctly to claim rewards. Led full-stack development including iOS, Android, Java backend, and React frontend as Technical Lead.
-                    </div>
-                    <ul>
-                        <li>Architected and designed comprehensive Java Spring Microservices architecture ensuring scalability, maintainability, and seamless integration</li>
-                        <li>Established and enforced best practices and coding standards for Spring Microservices development and deployment</li>
-                        <li>Developed core backend and frontend modules serving as base code for team development, including internal libraries, classes, and interfaces</li>
-                        <li>Created database diagrams, flowcharts, and technical documentation based on business requirements</li>
-                        <li>Performed code reviews, created technical tickets, identified dependencies, and incorporated solutions</li>
-                        <li>Worked closely with QA and developers to clarify technical details and ensure task completion</li>
-                        <li>Conducted research to enhance security on backend systems, databases, and applications, implementing security measures across all systems</li>
-                    </ul>
-                    <div class="tech-stack">Technologies: Java, SpringBoot, Spring Microservices, Swift, SwiftUI, Android SDK, Elasticsearch, GraphQL, Node.js, MongoDB, MySQL, React, Firebase, AWS, GCP, MQTT, GoLang</div>
-                </div>
-                
-                <div class="company-info">
-                    <span class="company-name">PickMe — Sri Lanka</span>
-                    <span class="date">Feb 2018 - Nov 2019</span>
-                </div>
-                <div class="job-title">Senior Software Engineer</div>
-                
-                <div class="project-block">
-                    <div class="project-description">
-                        PickMe is the #1 transportation hailing and food delivery platform in Western Province, Sri Lanka. Contributed to backend development and system architecture.
-                    </div>
-                    <ul>
-                        <li>Developed microservices-based solutions using PHP and Laravel, ensuring scalable and resilient backend systems</li>
-                        <li>Fixed issues in existing architecture and improved overall performance of internal systems</li>
-                        <li>Implemented services in GoLang and deployed successfully through Docker</li>
-                        <li>Used Go Kafka streams in core hailing and food delivery system</li>
-                        <li>Served as Technical Owner of the team, providing technical documents, database diagrams, and creating tickets</li>
-                    </ul>
-                    <div class="tech-stack">Technologies: PHP, Laravel, Java, SpringBoot, Elasticsearch, Node.js, MongoDB, MySQL, React, Lumen, GCP, MQTT, GoLang, Kibana, Firebase, Docker</div>
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">SpringBoot Microservices</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">AWS Lambda</span>
+                    <span class="skill-tag">Hibernate</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">PHP Laravel</span>
+                    <span class="skill-tag">Python Django</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Redux</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Okta</span>
+                    <span class="skill-tag">Swift</span>
+                    <span class="skill-tag">SwiftUI</span>
+                    <span class="skill-tag">Kotlin</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Android SDK</span>
+                    <span class="skill-tag">GCP</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">ELK Stack</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MariaDB</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Apache NIFI</span>
+                    <span class="skill-tag">Kafka</span>
+                    <span class="skill-tag">Golang</span>
+                    <span class="skill-tag">E-commerce</span>
+                    <span class="skill-tag">CRM</span>
+                    <span class="skill-tag">UML</span>
                 </div>
             </div>
             
             <div class="section">
-                <h2 class="section-title">Education & Certification</h2>
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Associate Technical Lead</div>
+                            <div class="company-name">Aeturnum Lanka</div>
+                        </div>
+                        <div class="job-meta">
+                            <div class="date">Feb 2022 - Present</div>
+                            <div class="location">Sri Lanka</div>
+                        </div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Designed and developed scalable microservices using Spring Boot and Core Java for telehealth and fintech platforms</li>
+                        <li>Integrated AWS Lambda and JDBI for efficient database operations and data analytics pipelines</li>
+                        <li>Oversaw system architecture and design reviews, implementing best practices to improve scalability, reliability, and overall application performance</li>
+                        <li>Built and maintained robust front-end components using React and Redux with Okta authentication</li>
+                        <li>Implemented AWS CI/CD pipelines using CodePipeline for automated deployments and continuous integration</li>
+                        <li>Mentored developers, conducted code reviews, and created technical documentation and diagrams</li>
+                    </ul>
+                    
+                    <div class="project-section">
+                        <div class="project-title">Client: Monitored Therapeutics Inc. (MTI)</div>
+                        <div class="project-description">
+                            MTI is a telehealth solutions provider specializing in remote patient monitoring for respiratory diseases through platforms such as GoHome™, GoMobile, and BYOD. As Associate Technical Lead, I was responsible for designing and developing secure backend applications using AWS Lambda and Spring Boot, ensuring reliable data integration, and leading cross-functional teams to enhance patient monitoring, analytics, and engagement features.
+                        </div>
+                        <ul>
+                            <li>Designed and developed scalable microservices with Spring Boot, integrating AWS Lambda and JDBI for efficient database interactions</li>
+                            <li>Managed DevOps workflows by setting up AWS CodePipeline for seamless CI/CD and automated deployment</li>
+                            <li>Built and maintained robust front-end applications using React and Redux, implementing advanced security measures with Okta for authentication and authorization in both back-end (Java/Spring Boot) and front-end (React) layers</li>
+                            <li>Built AWS Lambda APIs to handle patient measurement data and return computed results to the mobile app</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-section">
+                        <div class="project-title">Client: mosaic.green</div>
+                        <div class="project-description">
+                            mosaic.green is a data-driven B2B e-commerce website, providing online store facilities such as mobile app, admin panel, business platform, data analytics etc. to other vendors. My role for this project is Technical Lead and Team Leader for Report and Data Analytics team.
+                        </div>
+                        <ul>
+                            <li>Developed backend applications using Java and Spring Boot Microservices with MySQL for data management and high-performance transactions</li>
+                            <li>Developed frontend applications using React, NextJS, and Redux</li>
+                            <li>Created chart and data visualization components using Nivo library in React</li>
+                            <li>Researched, planned, and provided technical details to build features and dashboards for data analytics and transactions</li>
+                            <li>Implemented an architecture to extract data from microservices to data analytics platforms through ETL methods using Apache Nifi</li>
+                            <li>Created technical documentation, diagrams, and database structures</li>
+                            <li>Collaborated with business analysts and product managers, and created technical tasks for developers</li>
+                            <li>Performed code reviews and checked deployment documents</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-section">
+                        <div class="project-title">Client: Senso.ai</div>
+                        <div class="project-description">
+                            Senso.ai is a Canadian-based fintech company also a proactive borrower intelligence and engagement platform for mortgage lenders. My role for this project is Technical Lead and responsible to work on the Django backend application and React frontend.
+                        </div>
+                        <ul>
+                            <li>Responsible for working on the core part of the Django API and backend application according to the tickets</li>
+                            <li>Responsible for the analysis, design, coding, testing, implementation, maintenance, and documentation of all backend applications in a specified format</li>
+                            <li>Provided technical guidance and coaching to developers, and conducted code reviews and peer reviews</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Technical Lead</div>
+                            <div class="company-name">Take10 Trivia</div>
+                        </div>
+                        <div class="job-meta">
+                            <div class="date">Aug 2017 - Feb 2022</div>
+                            <div class="location">Illinois, United States</div>
+                        </div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Architected a comprehensive Java Spring Boot Microservices backend for a large-scale trivia app integrating real-prize systems</li>
+                        <li>Contributed to the development of backend, frontend, and mobile components (iOS and Android) using Java, React, and Swift</li>
+                        <li>Designed database schemas, flowcharts, and technical documentation based on business requirements</li>
+                        <li>Collaborated closely with QA and stakeholders to ensure product stability and scalability</li>
+                        <li>Created and managed all technical tickets, identified dependencies, and incorporated resolutions into the sprint workflow</li>
+                        <li>Worked directly with QA engineers and developers to clarify technical details, ensuring timely and accurate task completion</li>
+                        <li>Conducted extensive research to strengthen system security across backend, database, and mobile platforms, implementing protective measures across all layers</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior Software Engineer</div>
+                            <div class="company-name">PickMe</div>
+                        </div>
+                        <div class="job-meta">
+                            <div class="date">Feb 2018 - Nov 2019</div>
+                            <div class="location">Sri Lanka</div>
+                        </div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Developed scalable backend systems using PHP (Laravel) and Java Spring Boot for ride-hailing and food delivery system</li>
+                        <li>Improved existing architecture and implemented performance enhancements</li>
+                        <li>Deployed services using Docker and integrated Golang Kafka streams in the delivery core</li>
+                        <li>Managed backend teams, delivering solid documentation, database structures, and organized task workflows for efficient development</li>
+                        <li>Worked on PHP Laravel projects for internal tools and services, enhancing backend reliability and system maintainability</li>
+                        <li>Acted as Technical Owner for the team, ensuring proper design documentation, code quality, and collaboration between development and QA teams</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Software Engineer</div>
+                            <div class="company-name">SelfEcho</div>
+                        </div>
+                        <div class="job-meta">
+                            <div class="date">Feb 2016 - Aug 2017</div>
+                            <div class="location">California, United States</div>
+                        </div>
+                    </div>
+                    <ul class="responsibilities">
+                        <li>Designed and implemented backend services using PHP Laravel for mobile therapy platforms</li>
+                        <li>Developed iOS and Android features including notifications, charts, and video recording</li>
+                        <li>Built UML and architecture diagrams, and led backend API integration with Firebase and Google services</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Education</h2>
                 
                 <div class="education-item">
-                    <div class="degree">Master of Science (M.Sc.) in Computer Science</div>
-                    <div class="university">University of Wyoming, Laramie, Wyoming, United States</div>
-                    <div class="date">October 2014 - December 2017</div>
-                    <div style="margin-top: 10px;"><strong>Publications:</strong></div>
-                    <ol class="publications">
-                        <li>Detect Deadlock in MPI Program Using Static Analysis and Symbolic Execution (Master's Thesis)<br>
-                        <a href="https://par.nsf.gov/servlets/purl/10066364" target="_blank">https://par.nsf.gov/servlets/purl/10066364</a></li>
-                        <li>Detecting Thread-Safety Violations in Hybrid OpenMP/MPI Programs<br>
-                        <a href="https://www.researchgate.net/publication/282035322_Detecting_Thread-Safety_Violations_in_Hybrid_OpenMPMPI_Programs" target="_blank">View on ResearchGate</a></li>
-                    </ol>
+                    <div class="degree">Master of Computer Science</div>
+                    <div class="university">University of Wyoming</div>
+                    <div class="edu-meta">
+                        <span>Wyoming, USA</span>
+                        <span>Oct 2014 - Dec 2017</span>
+                    </div>
                 </div>
                 
                 <div class="education-item">
-                    <div class="degree">Bachelor of Science (B.Sc.) in Computer Science</div>
-                    <div class="university">University of Wyoming, Laramie, Wyoming, United States</div>
-                    <div class="date">January 2010 - August 2014</div>
+                    <div class="degree">Bachelor's of Computer Science</div>
+                    <div class="university">University of Wyoming</div>
+                    <div class="edu-meta">
+                        <span>Wyoming, USA</span>
+                        <span>Jan 2010 - Aug 2014</span>
+                    </div>
                 </div>
             </div>
             
             <div class="section">
-                <h2 class="section-title">Research & Project Experience</h2>
+                <h2 class="section-title">Publications</h2>
                 
-                <div class="company-info">
-                    <span class="company-name">University of Wyoming — Wyoming, United States</span>
-                    <span class="date">Jan 2016 - Aug 2016</span>
-                </div>
-                <div class="job-title">Android Developer and Research Assistant</div>
-                
-                <div class="project-block">
-                    <div class="project-description">
-                        Research project funded by Arnold Investments LLC and NSF focused on inventing accessibility solutions to adapt touch screen devices for motion-disabled users.
+                <div class="publications">
+                    <div class="pub-item">
+                        <div class="pub-title">Detect Deadlock in MPI Program Using Static Analysis and Symbolic Execution</div>
+                        <div class="pub-type">Master's Thesis</div>
+                        <div class="pub-link">
+                            <a href="https://par.nsf.gov/servlets/purl/10066364" target="_blank">https://par.nsf.gov/servlets/purl/10066364</a>
+                        </div>
                     </div>
-                    <ul>
-                        <li>Designed and developed facilitator Android application with OpenGL ES</li>
-                        <li>Developed Android application to read user behaviors, touch data, and collect participant data for analysis</li>
-                        <li>Contributed to research paper with collected study samples, user behaviors, and input data</li>
-                        <li>Collaborated with Arnold Investments LLC development team</li>
-                    </ul>
-                    <div class="tech-stack">Technologies: Java, JavaScript, Android SDK, OpenGL ES, Android NDK, C++</div>
-                </div>
-                
-                <div class="company-info">
-                    <span class="company-name">SelfEcho — California, United States</span>
-                    <span class="date">Feb 2016 - Aug 2017</span>
-                </div>
-                <div class="job-title">Senior Software Engineer</div>
-                
-                <div class="project-block">
-                    <div class="project-description">
-                        SelfEcho is a mobile therapy platform available on iOS and Android with modules for anxiety, fear, loss, and other therapeutic needs. Therapists can track client progress, journals, and surveys.
+                    
+                    <div class="pub-item">
+                        <div class="pub-title">Detecting Thread-Safety Violations in Hybrid OpenMP/MPI Programs</div>
+                        <div class="pub-link">
+                            <a href="https://www.researchgate.net/publication/282035322_Detecting_Thread-Safety_Violations_in_Hybrid_OpenMPMPI_Programs" target="_blank">View on ResearchGate</a>
+                        </div>
                     </div>
-                    <ul>
-                        <li>Designed and implemented architecture of backend services and app systems</li>
-                        <li>Designed database structures, UML diagrams, and architecture diagrams</li>
-                        <li>Developed backend API with PHP Laravel</li>
-                        <li>Implemented notifications, calendar, graphs/charts, audio/video recording, Facebook API, and Google Maps API in iOS and Android apps</li>
-                        <li>Conducted integration testing and provided test cases to QA testers</li>
-                    </ul>
-                    <div class="tech-stack">Technologies: Java, JavaScript, PHP, Laravel, Swift, Objective-C, Android SDK, Firebase</div>
                 </div>
             </div>
         </div>
